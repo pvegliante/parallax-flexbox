@@ -37,9 +37,12 @@ header {
   font-size: 8rem;
   text-align: center;
   margin: 0;
-  top: 50%;
+  top: 10%;
   text-decoration: underline;
+  text-shadow: 3px 3px 3px black;
   transform: translateY(-5rem);
+  opacity: 0;
+  animation: slide-down-fade-in 1.5s 1s forwards;
 }
 
 section.parallax {
@@ -52,12 +55,14 @@ section.parallax {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 3px 3px 3px black;
 }
 section.parallax h1 {
   color: white;
   font-size: 8rem;
   text-align: center;
   margin: 0;
+
 }
 
 section:nth-of-type(1) {
@@ -111,4 +116,25 @@ section.content p {
 .icon-block img {
   width: 15rem;
   margin: 3rem;
+  opacity: .5;
+}
+
+.icon-block img.visible {
+  animation: zoom-in-fade-in 1s forwards;
+}
+
+section.parallax .doc {
+  display: flex;
+  width: 90vw;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.taco {
+  display: flex;
+  width: 90vw;
+  flex-wrap: wrap;
+  padding-top: 0;
+  margin-left: 2rem;
 }
