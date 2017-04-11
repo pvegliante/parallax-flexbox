@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: calc(100vw * .47);
+  max-height: 100vh;
+}
+
+.video-container {
+  widows: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.video-container video {
+  position: fixed;
+  width: 100%;
+}
+
+.filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0, .4);
+}
+
+.title {
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  text-decoration: underline;
+  transform: translateY(-5rem);
+}
+
+section.parallax {
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.parallax h1 {
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  margin: 0;
+}
+
+section:nth-of-type(1) {
+  background-image: url('./images/rossi4.jpg');
+}
+section:nth-of-type(3) {
+  background-image: url('./images/rossi.jpg');
+}
+section:nth-of-type(5) {
+  background-image: url('./images/rossi2.jpg');
+}
+section:nth-of-type(7) {
+  background-image: url('./images/rossi3.jpg');
+}
+
+section.content {
+  min-height: 50vh;
+  width: 100%;
+  padding: 6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+section.content .container {
+  max-width: 90rem;
+  margin: auto;
+  padding: 2rem;
+  background-color: lightgray;
+  border-radius: 1.5rem;
+}
+
+section.content h2 {
+  margin-top: 0;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+section.content p {
+  margin-bottom:  0;
+  font-size: 2.5rem;
+}
+
+.icon-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon-block img {
+  width: 15rem;
+  margin: 3rem;
+}
